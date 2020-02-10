@@ -25,13 +25,13 @@ TARGET="T1019s2"  # The name of the target.
 TARGET_PATH="alphafold_casp13/${TARGET}"  # Path to the directory with the target input data.
 
 # Set up the virtual environment and install dependencies.
-python3 -m venv alphafold_venv
-source alphafold_venv/bin/activate
-pip install wheel
-pip install -r alphafold_casp13/requirements.txt
+#python3 -m venv alphafold_venv
+#source alphafold_venv/bin/activate
+#pip install wheel
+#pip install -r alphafold_casp13/requirements.txt
 
 # Create the output directory.
-OUTPUT_DIR="${HOME}/contacts_${TARGET}_$(date +%Y_%m_%d_%H_%M_%S)"
+OUTPUT_DIR="${PWD}/contacts_${TARGET}_$(date +%Y_%m_%d_%H_%M_%S)"
 mkdir -p "${OUTPUT_DIR}"
 echo "Saving output to ${OUTPUT_DIR}/"
 
